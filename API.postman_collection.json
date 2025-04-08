@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "8f3a57e8-6bf4-4f30-9b49-72c50dd9a71a",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43878149",
+		"_collection_link": "https://shauryatiwari.postman.co/workspace/Shaurya-Tiwari's-Workspace~7445e71a-5fb0-4d94-885d-7062a4bb7418/collection/43878149-8f3a57e8-6bf4-4f30-9b49-72c50dd9a71a?action=share&source=collection_link&creator=43878149"
+	},
+	"item": [
+		{
+			"name": "store",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/store/another store",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"store",
+						"another store"
+					]
+				},
+				"description": "Store creation"
+			},
+			"response": []
+		},
+		{
+			"name": "store Copy",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/store/another store/item",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"store",
+						"another store",
+						"item"
+					]
+				},
+				"description": "Store creation"
+			},
+			"response": []
+		},
+		{
+			"name": "store Copy",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"another store\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/store",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"store"
+					]
+				},
+				"description": "Store creation"
+			},
+			"response": []
+		},
+		{
+			"name": "store Copy 2",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"shoes\",\r\n    \"price\" : 100\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/store/another store/item",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"store",
+						"another store",
+						"item"
+					]
+				},
+				"description": "Store creation"
+			},
+			"response": []
+		}
+	]
+}
